@@ -16,7 +16,9 @@ function newchitfund() {
         <Link to="/public">
           <button className="text-grey1">Public ChitFunds</button>
         </Link>
-        <button className="text-grey1">Bookmarks</button>
+        <Link to="/bookmark">
+          <button className="text-grey1">Bookmarks</button>
+        </Link>
         <Link to="/newchit">
           <button className="p-4 bg-white shadow-smd rounded-xl">
             Create New Chit Fund

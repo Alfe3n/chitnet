@@ -11,7 +11,9 @@ const Navbar = () => {
         <Link to="/public">
           <button className="text-grey1">Public ChitFunds</button>
         </Link>
-        <button className="text-grey1">Bookmarks</button>
+        <Link to="/bookmark">
+          <button className="text-grey1">Bookmarks</button>
+        </Link>
         <Link to="/newchit">
           <button className="text-grey1">Create New Chit Fund</button>
         </Link>

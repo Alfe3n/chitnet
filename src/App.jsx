@@ -5,6 +5,7 @@ import Profile from "./pages/profile";
 import Dashboard from "./pages/dashboard";
 import PubliChitFund from "./pages/public";
 import NewChitFund from "./pages/newchitfund";
+import Bookmark from "./pages/bookmark";
 import { Route, Routes } from "react-router-dom";
 import PersonalDetails from "./components/PersonalDetails";
 import ChitHistory from "./components/ChitHistory";
@@ -22,9 +23,10 @@ function App() {
           <Route path="docs-submitted" element={<DocsSubmitted />} />
           <Route path="payment-history" element={<PaymentHistory />} />
         </Route>
+        <Route path="bookmark" element={<Bookmark />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="public" element={<PubliChitFund />} />
-        <Route path="newchit" element={<NewChitFund />} />
+        <Route path="newchit" element={<NewChitFund />} />,
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
     </>

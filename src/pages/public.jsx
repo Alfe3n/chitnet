@@ -1,12 +1,8 @@
 import React from "react";
 import { TbLogout2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { BsBookmarkPlus } from "react-icons/bs";
-import { chitdata } from "../data/chitdata";
-import { useToast } from "@chakra-ui/react";
+import { FaRegBookmark } from "react-icons/fa";
 function publicChitFund() {
-  const toast = useToast();
-
   return (
     <div className="h-full pb-20 bg-ash page-container">
       <div className="flex items-center pt-10 mb-10 mr-16 text-2xl justify-evenly nav-container gap-x-44 bg-ash">
@@ -18,7 +14,9 @@ function publicChitFund() {
             Public ChitFunds
           </button>
         </Link>
-        <button className="text-grey1">Bookmarks</button>
+        <Link to="/bookmark">
+          <button className="text-grey1">Bookmarks</button>
+        </Link>
         <Link to="/newchit">
           <button className="text-grey1">Create New Chit Fund</button>
         </Link>
@@ -31,26 +29,26 @@ function publicChitFund() {
       </div>
       <div className="flex flex-wrap gap-x-14 gap-y-14 justify-evenly">
         <div className="flex flex-col w-1/4 p-8 bg-white rounded-lg gap-y-8">
-          <p className="text-4xl font-medium">ChitID #6532</p>
+          <p className="text-4xl font-medium">ChitID #6585</p>
           <div className="flex justify-between text-xl font-normal">
             <p>Pool Amount</p>
             <p>20,00,000</p>
           </div>
           <div className="flex justify-between text-xl">
-            <p>Reamining Months</p>
+            <p>Duration</p>
             <p>16 Months</p>
           </div>
-          <div className="flex justify-between text-xl">
+          {/* <div className="flex justify-between text-xl">
             <p>No of Participants</p>
-            <p>20</p>
-          </div>
+            <p>30</p>
+          </div> */}
           <div className="flex justify-between text-xl">
             <p>Minimum Credit Score</p>
-            <p>800</p>
+            <p>700</p>
           </div>
           <div className="flex gap-x-8">
             <button className="p-4 text-lg text-orange-700 rounded-md bg-lightorange">
-              Bookmark
+              <FaRegBookmark className="text-3xl" />
             </button>
 
             <button className="p-4 text-lg text-green-500 rounded-md bg-lightgreen">
@@ -62,23 +60,23 @@ function publicChitFund() {
           <p className="text-4xl">ChitID #6532</p>
           <div className="flex justify-between text-xl">
             <p>Pool Amount</p>
-            <p>20,00,000</p>
+            <p>30,00,000</p>
           </div>
           <div className="flex justify-between text-xl">
             <p>Duration</p>
             <p>20 Months</p>
           </div>
-          <div className="flex justify-between text-xl">
+          {/* <div className="flex justify-between text-xl">
             <p>No of Participants</p>
-            <p>20</p>
-          </div>
+            <p>15</p>
+          </div> */}
           <div className="flex justify-between text-xl">
             <p>Minimum Credit Score</p>
-            <p>800</p>
+            <p>950</p>
           </div>
           <div className="flex gap-x-8">
-            <button className="p-4 text-lg text-orange-8=700 rounded-md bg-lightorange">
-              Bookmark
+            <button className="p-4 text-lg text-orange-700 rounded-md bg-lightorange">
+              <FaRegBookmark className="text-3xl" />
             </button>
             <button className="p-4 text-lg text-green-500 rounded-md bg-lightgreen">
               Join
@@ -86,26 +84,26 @@ function publicChitFund() {
           </div>
         </div>
         <div className="flex flex-col w-1/4 p-12 bg-white rounded-lg gap-y-8">
-          <p className="text-4xl">ChitID #6532</p>
+          <p className="text-4xl">ChitID #6539</p>
           <div className="flex justify-between text-xl">
             <p>Pool Amount</p>
-            <p>20,00,000</p>
+            <p>10,00,000</p>
           </div>
           <div className="flex justify-between text-xl">
             <p>Duration</p>
-            <p>20 Months</p>
+            <p>10 Months</p>
           </div>
-          <div className="flex justify-between text-xl">
+          {/* <div className="flex justify-between text-xl">
             <p>No of Participants</p>
             <p>20</p>
-          </div>
+          </div> */}
           <div className="flex justify-between text-xl">
             <p>Minimum Credit Score</p>
-            <p>800</p>
+            <p>700</p>
           </div>
           <div className="flex gap-x-8">
-            <button className="p-4 text-lg text-orange-8=700 rounded-md bg-lightorange">
-              Bookmark
+            <button className="p-4 text-lg text-orange-700 rounded-md bg-lightorange">
+              <FaRegBookmark className="text-3xl" />
             </button>
             <button className="p-4 text-lg text-green-500 rounded-md bg-lightgreen">
               Join
@@ -113,26 +111,26 @@ function publicChitFund() {
           </div>
         </div>
         <div className="flex flex-col w-1/4 p-12 bg-white rounded-lg gap-y-8">
-          <p className="text-4xl">ChitID #6532</p>
+          <p className="text-4xl">ChitID #6592</p>
           <div className="flex justify-between text-xl">
             <p>Pool Amount</p>
-            <p>20,00,000</p>
+            <p>5,00,000</p>
           </div>
           <div className="flex justify-between text-xl">
             <p>Duration</p>
-            <p>20 Months</p>
+            <p>12 Months</p>
           </div>
-          <div className="flex justify-between text-xl">
+          {/* <div className="flex justify-between text-xl">
             <p>No of Participants</p>
-            <p>20</p>
-          </div>
+            <p>8</p>
+          </div> */}
           <div className="flex justify-between text-xl">
             <p>Minimum Credit Score</p>
-            <p>800</p>
+            <p>720</p>
           </div>
           <div className="flex gap-x-8">
-            <button className="p-4 text-lg text-orange-8=700 rounded-md bg-lightorange">
-              Bookmark
+            <button className="p-4 text-lg text-orange-700 rounded-md bg-lightorange">
+              <FaRegBookmark className="text-3xl" />
             </button>
             <button className="p-4 text-lg text-green-500 rounded-md bg-lightgreen">
               Join
@@ -140,26 +138,26 @@ function publicChitFund() {
           </div>
         </div>
         <div className="flex flex-col w-1/4 p-16 bg-white rounded-lg gap-y-8">
-          <p className="text-4xl">ChitID #6532</p>
+          <p className="text-4xl">ChitID #6542</p>
           <div className="flex justify-between text-xl">
             <p>Pool Amount</p>
-            <p>20,00,000</p>
+            <p>15,00,000</p>
           </div>
-          <div className="flex justify-between text-xl">
+          {/* <div className="flex justify-between text-xl">
             <p>Duration</p>
-            <p>20 Months</p>
-          </div>
+            <p>12 Months</p>
+          </div> */}
           <div className="flex justify-between text-xl">
             <p>No of Participants</p>
-            <p>20</p>
+            <p>15</p>
           </div>
           <div className="flex justify-between text-xl">
             <p>Minimum Credit Score</p>
-            <p>800</p>
+            <p>720</p>
           </div>
           <div className="flex gap-x-8">
-            <button className="p-4 text-lg text-orange-8=700 rounded-md bg-lightorange">
-              Bookmark
+            <button className="p-4 text-lg text-orange-700 rounded-md bg-lightorange">
+              <FaRegBookmark className="text-3xl" />
             </button>
             <button className="p-4 text-lg text-green-500 rounded-md bg-lightgreen">
               Join
@@ -167,26 +165,26 @@ function publicChitFund() {
           </div>
         </div>
         <div className="flex flex-col w-1/4 p-16 bg-white rounded-lg gap-y-8">
-          <p className="text-4xl">ChitID #6532</p>
+          <p className="text-4xl">ChitID #6832</p>
           <div className="flex justify-between text-xl">
             <p>Pool Amount</p>
-            <p>20,00,000</p>
+            <p>35,00,000</p>
           </div>
-          <div className="flex justify-between text-xl">
+          {/* <div className="flex justify-between text-xl">
             <p>Duration</p>
-            <p>20 Months</p>
-          </div>
+            <p>24 Months</p>
+          </div> */}
           <div className="flex justify-between text-xl">
             <p>No of Participants</p>
-            <p>20</p>
+            <p>16</p>
           </div>
           <div className="flex justify-between text-xl">
             <p>Minimum Credit Score</p>
             <p>800</p>
           </div>
           <div className="flex gap-x-8">
-            <button className="p-4 text-lg text-orange-8=700 rounded-md bg-lightorange">
-              Bookmark
+            <button className="p-4 text-lg text-orange-700 rounded-md bg-lightorange">
+              <FaRegBookmark className="text-3xl" />
             </button>
             <button className="p-4 text-lg text-green-500 rounded-md bg-lightgreen">
               Join
